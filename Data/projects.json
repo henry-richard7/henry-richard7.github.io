@@ -1,0 +1,44 @@
+[
+    {
+        "projectName": "MX Player Clone",
+        "projectUrl": "https://henry-richard.ml/MX-Project/",
+        "description": "An MX Player Clone without ads.",
+        "projectImg": "https://img.icons8.com/doodle/200/000000/circled-play.png"
+    },
+    {
+        "projectName": "Music Station",
+        "description": "A JioSaavn Clone Web App Designed Using Python and Flask Framework.",
+        "projectUrl": "https://music-station-flask-app.vercel.app/home?lang=tamil",
+        "projectImg": "https://img.icons8.com/bubbles/200/000000/apple-music.png"
+    },
+    {
+        "projectName": "Voot Streamer",
+        "description": "A web app that allows you to watch voot Movies and Tv Shows without login",
+        "projectUrl": "https://henry-richard.ml/VOOT Streamer/",
+        "projectImg": "assets/voot.png"
+    },
+    {
+        "projectName": "World Radio",
+        "description": "Listen to Radio World Wide!.",
+        "projectUrl": "http://henry-richard-7.0hi.me/World%20Radio/",
+        "projectImg": "https://img.icons8.com/doodle/200/000000/boombox.png"
+    },
+    {
+        "projectName": "NSE-Tool",
+        "description": "C# app that scrapes NSE live Stocks prices and gives you Pivot, Resistance and DMA for your selected stocks.",
+        "projectUrl": "https://henry-richard.ml/NSE-Tool/",
+        "projectImg": "assets/nse.png"
+    },
+    {
+        "projectName": "Game-Fox",
+        "description": "Get latest games, Free Games and Game Trailers!.",
+        "projectUrl": "https://henry-richard.ml/Games-Fox/",
+        "projectImg": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/200/000000/external-fox-autumn-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
+    },
+    {
+        "projectName": "Henry's Repository",
+        "description": "A 3rd-Party Addons Repository For Kodi Media Player.",
+        "projectUrl": "https://henry-richard.ml/Kodi/",
+        "projectImg": "https://img.icons8.com/plasticine/200/000000/kodi.png"
+    }
+]
