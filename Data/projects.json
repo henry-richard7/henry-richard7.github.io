@@ -32,13 +32,13 @@
     {
         "projectName": "Game-Fox",
         "description": "Get latest games, Free Games and Game Trailers!.",
-        "projectUrl": "https://henry-richard.ml/Games-Fox/",
+        "projectUrl": "#",
         "projectImg": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/200/000000/external-fox-autumn-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
     },
     {
         "projectName": "Henry's Repository",
         "description": "A 3rd-Party Addons Repository For Kodi Media Player.",
-        "projectUrl": "https://henry-richard.ml/Kodi/",
+        "projectUrl": "#",
         "projectImg": "https://img.icons8.com/plasticine/200/000000/kodi.png"
     }
 ]
