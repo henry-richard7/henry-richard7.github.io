@@ -1,4 +1,4 @@
-fetch("./data/projects.json")
+fetch("./Data/projects.json")
     .then(function (response) {
         let data = response.json()
         return data
