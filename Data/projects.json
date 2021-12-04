@@ -26,7 +26,7 @@
     {
         "projectName": "NSE-Tool",
         "description": "C# app that scrapes NSE live Stocks prices and gives you Pivot, Resistance and DMA for your selected stocks.",
-        "projectUrl": "https://henry-richard.ml/NSE-Tool/",
+        "projectUrl": "https://henry-richard.ml/NSE-Tool-Stocks-Aerial-View/",
         "projectImg": "assets/nse.png"
     },
     {
