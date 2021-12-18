@@ -46,5 +46,11 @@
         "description": "Windows app that allows you to download anime that are available on the web.",
         "projectUrl": "https://henry-richard.ml/Anime-Downloader/",
         "projectImg": "https://img.icons8.com/color/200/000000/naruto-sign.png"
+    },
+    {
+        "projectName": "WI-FI BSSID Locator",
+        "description": "A tool which finds the location of a wifi access point from its BSSID.",
+        "projectUrl": "https://henry-richard.ml/BSSID-Locator/",
+        "projectImg": "https://img.icons8.com/external-tulpahn-outline-color-tulpahn/200/000000/external-wifi-mobile-user-interface-tulpahn-outline-color-tulpahn.png"
     }
 ]
