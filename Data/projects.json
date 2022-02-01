@@ -53,4 +53,11 @@
         "projectUrl": "https://henry-richard.ml/BSSID-Locator/",
         "projectImg": "https://img.icons8.com/external-tulpahn-outline-color-tulpahn/200/000000/external-wifi-mobile-user-interface-tulpahn-outline-color-tulpahn.png"
     }
+    ,
+    {
+        "projectName": "My NFT Listing",
+        "description": "Here you can buy my NFTs.",
+        "projectUrl": "https://opensea.io/collection/py-lines",
+        "projectImg": "<https://img.icons8.com/cotton/200/ffffff/nft.png"
+    }
 ]
