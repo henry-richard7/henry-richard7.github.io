@@ -30,6 +30,12 @@
         "projectImg": "assets/nse.png"
     },
     {
+        "projectName": "Stocks Aerial View",
+        "description": "A website version of NSE-Tool.",
+        "projectUrl": "https://nse-stocks-view.herokuapp.com/",
+        "projectImg": "https://img.icons8.com/external-soft-fill-juicy-fish/200/000000/external-trade-side-hustles-soft-fill-soft-fill-juicy-fish-2.png"
+    },
+    {
         "projectName": "Game-Fox",
         "description": "Get latest games, Free Games and Game Trailers!.",
         "projectUrl": "https://games-fox-henry.herokuapp.com/",
