@@ -1,181 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/external-flat-juicy-fish/60/000000/external-developer-devops-flat-flat-juicy-fish-2.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <link rel="icon" href="assets/dev.png" type="image/gif" sizes="16x16">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <style>
+      .social-links a {
+        color: #007f5f;
+      }
+      .social-links a:hover {
+        color: #55a630;
+      }
+      #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+      }
+    </style>
+    <title>Henry Richard</title>
+  </head>
+  <body class="bg-white">
+    <button
+      type="button"
+      class="btn btn-success btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <script>
+        let mybutton = document.getElementById("btn-back-to-top");
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
 
-  <script src="js/projects.js"></script>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZEKJX28FK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
 
-  gtag('config', 'G-SZEKJX28FK');
-</script>
+        function backToTop() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-SZEKJX28FK"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-  <!-- Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
-
-  <!-- Linking CSS Below-->
-  <link rel="stylesheet" href="css/style.css">
-  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-
-  <title>Henry Richard - CSE Graduate</title>
-
-
-</head>
-
-<body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assets/dev.png" width="30" height="30" class="d-inline-block align-top" alt="">&nbsp; Henry
-        Richard</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Personal Projects</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
-  <section id="about" class="d-flex justify-content-center pt-5 about">
-    <div class="about-card">
-      <img src="assets/henry.jpg" class="d-flex justify-content-center henry-pic">
-      <h1 class="mb-2 mt-0 --name">
-        Henry Richard J
-      </h1>
-      <h1 class="d-flex justify-content-center ttyper">
-        I am a &nbsp<span class="typer" id="some-id" data-words="Developer.,Quick learner.,CSE Graduate."
-          data-colors="#FF9F1C,#FF9F1C,#FF9F1C" data-delay="50">
-        </span>
-      </h1>
-      <ul class="social-icons light list-inline mb-0 mt-1 d-flex justify-content-center">
-
-        <li class="list-inline-item"><a href="https://t.me/hr_tools"><i class="fab fa-telegram"
-              aria-hidden="true"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-        <li class="list-inline-item"><a href="https://github.com/henry-richard7"><i class="fab fa-github"
-              aria-hidden="true"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.linkedin.com/in/henry-richard-12867a1a9/"><i
-              class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCVGasc5jr45eZUpZNHvbtWQ"><i
-              class="fab fa-youtube" aria-hidden="true"></i></a></li>
-
-      </ul>
-    </div>
-
-  </section>
-
-  <section id="skills" class="d-flex justify-content-center pt-5 skills">
-    <div class="skills-card">
-
-      <h1 class="mb-2 mt-0 --name d-flex justify-content-center pt-1">
-        My Skills
-      </h1>
-
-      <div class="row pt-4" id="skills-icon-row">
-        <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
-          <ul>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/python--v2.png" class="img-responsive inline-block"
-                alt="Python" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/java.png" class="img-responsive inline-block"
-                alt="Java" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/android-studio.png" class="img-responsive inline-block"
-                alt="Android Studio" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/c-sharp-logo.png" class="img-responsive inline-block"
-                alt="C#" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/html-5.png" class="img-responsive inline-block"
-                alt="HTML5" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/css3.png" class="img-responsive inline-block"
-                alt="CSS" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/javascript.png" class="img-responsive inline-block"
-                alt="Java Script" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/ios-filled/85/edf6f9/unity.png" class="img-responsive inline-block"
-                alt="Unity" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/ios/85/edf6f9/flask.png" class="img-responsive inline-block"
-                alt="Python Flask Framework" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/ios-filled/85/edf6f9/golang.png" class="img-responsive inline-block"
-                alt="GOlang" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/linux.png" class="img-responsive inline-block"
-                alt="Linux" />
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/85/000000/windows-10.png" class="img-responsive inline-block"
-                alt="Windows" />
-            </li>
+        gtag("config", "G-SZEKJX28FK");
+      </script>
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
+      <div class="container-lg">
+        <a class="navbar-brand text-success fw-bold fs-4" href="#">
+          Henry Richard
+        </a>
+        <div class="dropdown">
+          <button
+            class="btn btn-success px-3"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <li><a class="dropdown-item" href="#home">Home</a></li>
+            <li><a class="dropdown-item" href="#about">About</a></li>
+            <li><a class="dropdown-item" href="#projects">Projects</a></li>
           </ul>
         </div>
       </div>
+    </nav>
 
-    </div>
-
-  </section>
-
-  <section id="projects" class="d-flex justify-content-center pt-5 projects">
-    <div class="project-card">
-      <h1 class="mb-2 mt-0 --name d-flex justify-content-center pt-1">
-        Personal Projects
-      </h1>
-      <br />
-      <div id="project-card-carousel" class="mx-auto"></div>
-    </div>
-
-  </section>
-
-</body>
-<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-
+    <section class="home py-5" id="home">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center align-content-center">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-img text-center">
+              <img
+                src="assets/henry.png"
+                alt="Henry Richard"
+                class="fa-square mw-100 fa-border border-success fa-5x"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+            <div class="home-text">
+              <p class="text-muted fs-2">👋 Hi there,</p>
+              <h1 class="text-success text-uppercase fs-1 fw-bold">
+                <span class="text-black">I'm</span> Henry Richard
+              </h1>
+              <h2 class="fs-4">
+                I am a
+                <span
+                  class="typer"
+                  id="some-id"
+                  data-words="Self taught programmar.,Problem solver.,CSE Graduate."
+                  data-colors="#eb5e28,#2c7da0,#e01e37"
+                  data-delay="50"
+                >
+                </span>
+              </h2>
+              <div class="location fs-5 pt-2 fw-bolder">
+                <i class="fas fa-location-dot"></i> Chennai, Tamil Nadu, India
+              </div>
+              <a href="#about" class="btn btn-success px-4 py-2 mt-4">
+                About Me <i class="fas fa-arrow-circle-down"></i>
+              </a>
+              <div class="social-links fs-1 pt-3">
+                <a
+                  href="https://www.linkedin.com/in/henry-richard7/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in me-2"></i
+                ></a>
+                <a href="https://github.com/henry-richard7/" target="_blank"
+                  ><i class="fab fa-github me-2"></i
+                ></a>
+                <a
+                  href="https://www.hackerrank.com/henry_richard_7"
+                  target="_blank"
+                  ><i class="fab fa-hackerrank me-2"></i
+                ></a>
+                <a href="https://t,me/hr_tools" target="_blank"
+                  ><i class="fab fa-telegram me-2"></i
+                ></a>
+                <a href="#"><i class="fab fa-instagram me-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about bg-white py-5" id="about">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="session-title text-center">
+              <h2 class="fw-bold mb-5">
+                <i class="fas fa-user text-success"></i> About me
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-text">
+              <h3 class="fs-1">Henry Richard</h3>
+              <h5 class="fs-4">Passionate Python Developer</h5>
+              <p class="text-muted fs-6">
+                I Am Very Passionate About Improving My Coding Skills &
+                Developing My Own Applications & Softwares. Having Some
+                Experience In Web Development. Interested In Software
+                developmet. Loves To Develop Python & API Stuff.
+              </p>
+              <div class="row text-center text-uppercase my-3">
+                <div class="col-sm-4">
+                  <div class="fact-item">
+                    <h4 class="fs-2 fw-bold">49+</h4>
+                    <p class="text-muted fw-bold">
+                      <i class="fab fa-github"></i> Github Repos
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="fact-item">
+                    <h4 class="fs-2 fw-bold">54+</h4>
+                    <p class="text-muted fw-bold">
+                      <i class="fas fa-user-circle"></i> Followers
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="fact-item">
+                    <h4 class="fs-2 fw-bold">114+</h4>
+                    <p class="text-muted fw-bold">
+                      <i class="fas fa-star"></i> Stars
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <a
+                    href="#projects"
+                    class="btn bg-success text-white px-4 py-2 mt-2 mb-5"
+                  >
+                    My Projects
+                    <i class="fas fa-arrow-circle-down"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-2 mt-md-0">
+            <div class="skills-item mb-4">
+              <h3 class="fs-4"><i class="fab fa-python"></i> Python</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 97%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skills-item mb-4">
+              <h3 class="fs-4"><i class="fab fa-java"></i> Java</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 56%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skills-item mb-4">
+              <h3 class="fs-4"><i class="fab fa-html5"></i> HTML</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 78%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skills-item mb-4">
+              <h3 class="fs-4"><i class="fab fa-css3-alt"></i> CSS</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 71%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skills-item mb-4">
+              <h3 class="fs-4"><i class="fab fa-js"></i> JavaScript</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skills-item mb-4">
+              <h3 class="fs-4"><i class="fas fa-database"></i> MySql</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 49%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects bg-white py-5" id="projects">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="session-title text-center">
+              <h2 class="fw-bold mb-5">
+                <i class="fas fa-code text-success"></i> Projects
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="project-item">
+              <img src="assets/MX-MOVIES.png" class="w-100 img-thumbnail" />
+              <h3 class="fs-5 my-2">MX Player Clone</h3>
+              <p class="mb-4">
+                <a
+                  href="https://henry-richard.ml/MX-Player-Web/"
+                  class="text-decoration-none btn btn-success px-4 py-2"
+                  target="_blank"
+                  ><i class="fas fa-eye"></i> View</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-item">
+              <img src="assets/NIFTY 50.png" class="w-100 img-thumbnail" />
+              <h3 class="fs-5 my-2">Stocks Aerial View</h3>
+              <p class="mb-4">
+                <a
+                  href="https://nse-stocks-view.herokuapp.com/"
+                  class="text-decoration-none btn btn-success px-4 py-2"
+                  target="_blank"
+                  ><i class="fas fa-eye"></i> View</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-item">
+              <img
+                src="assets/World Radio - Listen to all radio around the world!.png"
+                class="w-100 img-thumbnail"
+              />
+              <h3 class="fs-5 my-2">World Radio</h3>
+              <p class="mb-4">
+                <a
+                  href="http://henry-richard.ml/World-Radio/"
+                  class="text-decoration-none btn btn-success px-4 py-2"
+                  target="_blank"
+                  ><i class="fas fa-eye"></i> View</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-item">
+              <img
+                src="assets/Your Watching - K.G.F  Chapter 1  Hindi .png"
+                class="w-100 img-thumbnail"
+              />
+              <h3 class="fs-5 my-2">Voot Streamer</h3>
+              <p class="mb-4">
+                <a
+                  href="https://henry-richard.ml/Voot-Streamer/"
+                  class="text-decoration-none btn btn-success px-4 py-2"
+                  target="_blank"
+                  ><i class="fas fa-eye"></i> View</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-item">
+              <img src="assets/GTAO.png" class="w-100 img-thumbnail" />
+              <h3 class="fs-5 my-2">GTA Online - IP Grabber</h3>
+              <p class="mb-4">
+                <a
+                  href="https://github.com/henry-richard7/Grand-Theft-Auto-Online-IP-Grabber"
+                  class="text-decoration-none btn btn-success px-4 py-2"
+                  target="_blank"
+                  ><i class="fas fa-eye"></i> View</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-item">
+              <img
+                src="assets/Spotify-Downloader.png"
+                class="w-100 img-thumbnail"
+              />
+              <h3 class="fs-5 my-2">Spotify Playlist Downloader</h3>
+              <p class="mb-4">
+                <a
+                  href="https://github.com/henry-richard7/spotify-playlist-downloader"
+                  class="text-decoration-none btn btn-success px-4 py-2"
+                  target="_blank"
+                  ><i class="fas fa-eye"></i> View</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
