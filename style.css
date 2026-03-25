@@ -202,8 +202,9 @@ a {
   color: var(--text-secondary);
 }
 
-.nav-links a:hover {
-  color: var(--text-primary);
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent-primary);
 }
 
 .hamburger {
@@ -254,6 +255,12 @@ a {
 .mobile-nav-links a {
   font-size: 1.2rem;
   font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.mobile-nav-links a:hover,
+.mobile-nav-links a.active {
+  color: var(--accent-primary);
 }
 
 /* Buttons */
@@ -871,4 +878,42 @@ footer {
     justify-content: center;
     gap: 1.5rem;
   }
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 15px var(--accent-glow);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+  background: var(--accent-secondary);
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
 }

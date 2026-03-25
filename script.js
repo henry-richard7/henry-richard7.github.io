@@ -75,3 +75,63 @@ const staggerObserver = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.stagger-item').forEach(element => {
     staggerObserver.observe(element);
 });
+
+// Scrollspy for Navigation Links
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-links a');
+const mobileNavItems = document.querySelectorAll('.mobile-nav-links a');
+
+function updateActiveSection() {
+    let current = '';
+    
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        // Section is active if its top is near or above the viewport top 
+        // AND its bottom hasn't completely scrolled up past the navbar
+        if (rect.top <= window.innerHeight / 3 && rect.bottom >= 100) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    if (current) {
+        navItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+        
+        mobileNavItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+}
+
+// Listen to scroll events
+window.addEventListener('scroll', updateActiveSection);
+// Run immediately on page load to set the initial state
+window.addEventListener('load', updateActiveSection);
+// Also call it once right away in case the page is already loaded
+updateActiveSection();
+
+// Back to Top Button Logic
+const backToTopBtn = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        backToTopBtn.classList.add('visible');
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
+});
+
+backToTopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
