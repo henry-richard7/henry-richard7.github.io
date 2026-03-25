@@ -1,438 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="icon"
-      href="https://img.icons8.com/external-flat-juicy-fish/60/000000/external-developer-devops-flat-flat-juicy-fish-2.png"
-      type="image/gif"
-      sizes="16x16"
-    />
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-    <style>
-      .social-links a {
-        color: #007f5f;
-      }
-      .social-links a:hover {
-        color: #55a630;
-      }
-      #btn-back-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        display: none;
-      }
-    </style>
-    <title>Henry Richard</title>
-  </head>
-  <body class="bg-white">
-    <button
-      type="button"
-      class="btn btn-success btn-floating btn-lg"
-      id="btn-back-to-top"
-    >
-      <script>
-        let mybutton = document.getElementById("btn-back-to-top");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Henry Richard J - Data Engineer Portfolio">
+    <title>Henry Richard J | Data Engineer</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction();
-        };
+<body>
+    <!-- Abstract Background Elements -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
 
-        function scrollFunction() {
-          if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-          ) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        // When the user clicks on the button, scroll to the top of the document
-        mybutton.addEventListener("click", backToTop);
-
-        function backToTop() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-SZEKJX28FK"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "G-SZEKJX28FK");
-      </script>
-      <i class="fas fa-arrow-up"></i>
-    </button>
-    <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
-      <div class="container-lg">
-        <a class="navbar-brand text-success fw-bold fs-4" href="#">
-          Henry Richard
-        </a>
-        <div class="dropdown">
-          <button
-            class="btn btn-success px-3"
-            type="button"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul
-            class="dropdown-menu dropdown-menu-end"
-            aria-labelledby="dropdownMenuButton1"
-          >
-            <li><a class="dropdown-item" href="#home">Home</a></li>
-            <li><a class="dropdown-item" href="#about">About</a></li>
-            <li><a class="dropdown-item" href="#projects">Projects</a></li>
-          </ul>
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <a href="#" class="logo">HENRY<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-      </div>
     </nav>
 
-    <section class="home py-5" id="home">
-      <div class="container-lg">
-        <div class="row min-vh-100 align-items-center align-content-center">
-          <div class="col-md-6 mt-5 mt-md-0">
-            <div class="home-img text-center">
-              <img
-                src="assets/henry.png"
-                alt="Henry Richard"
-                class="fa-square mw-100 fa-border border-success fa-5x"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 mt-5 mt-md-0 order-md-first">
-            <div class="home-text">
-              <p class="text-muted fs-2">👋 Hi there,</p>
-              <h1 class="text-success text-uppercase fs-1 fw-bold">
-                <span class="text-black">I'm</span> Henry Richard
-              </h1>
-              <h2 class="fs-4">
-                I am a
-                <span
-                  class="typer"
-                  id="some-id"
-                  data-words="Self taught programmar.,Problem solver.,CSE Graduate."
-                  data-colors="#eb5e28,#2c7da0,#e01e37"
-                  data-delay="50"
-                >
-                </span>
-              </h2>
-              <div class="location fs-5 pt-2 fw-bolder">
-                <i class="fas fa-location-dot"></i> Chennai, Tamil Nadu, India
-              </div>
-              <a href="#about" class="btn btn-success px-4 py-2 mt-4">
-                About Me <i class="fas fa-arrow-circle-down"></i>
-              </a>
-              <div class="social-links fs-1 pt-3">
-                <a
-                  href="https://www.linkedin.com/in/henry-richard7/"
-                  target="_blank"
-                  ><i class="fab fa-linkedin-in me-2"></i
-                ></a>
-                <a href="https://github.com/henry-richard7/" target="_blank"
-                  ><i class="fab fa-github me-2"></i
-                ></a>
-                <a
-                  href="https://www.hackerrank.com/henry_richard_7"
-                  target="_blank"
-                  ><i class="fab fa-hackerrank me-2"></i
-                ></a>
-                <a href="https://t,me/hr_tools" target="_blank"
-                  ><i class="fab fa-telegram me-2"></i
-                ></a>
-                <a href="#"><i class="fab fa-instagram me-2"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about bg-white py-5" id="about">
-      <div class="container-lg py-4">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="session-title text-center">
-              <h2 class="fw-bold mb-5">
-                <i class="fas fa-user text-success"></i> About me
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="about-text">
-              <h3 class="fs-1">Henry Richard</h3>
-              <h5 class="fs-4">Passionate Python Developer</h5>
-              <p class="text-muted fs-6">
-                I Am Very Passionate About Improving My Coding Skills &
-                Developing My Own Applications & Softwares. Having Some
-                Experience In Web Development. Interested In Software
-                developmet. Loves To Develop Python & API Stuff.
-              </p>
-              <div class="row text-center text-uppercase my-3">
-                <div class="col-sm-4">
-                  <div class="fact-item">
-                    <h4 class="fs-2 fw-bold">49+</h4>
-                    <p class="text-muted fw-bold">
-                      <i class="fab fa-github"></i> Github Repos
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu glass-effect">
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container hero-content">
+                <div class="hero-text fade-in-up">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">Henry Richard J</h1>
+                    <h2 class="role">Data Engineer</h2>
+                    <p class="summary">
+                        Building scalable pipelines, optimizing big data workflows, and delivering cloud-based analytics
+                        solutions. Helping organizations turn complex data into actionable insights.
                     </p>
-                  </div>
+                    <div class="cta-buttons">
+                        <a href="#experience" class="btn btn-primary">View My Work</a>
+                        <a href="#about" class="btn btn-secondary glass-effect">Contact Me</a>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                  <div class="fact-item">
-                    <h4 class="fs-2 fw-bold">54+</h4>
-                    <p class="text-muted fw-bold">
-                      <i class="fas fa-user-circle"></i> Followers
-                    </p>
-                  </div>
+                <div class="hero-image-container fade-in-up delay-1">
+                    <img src="assets/profile.png" alt="Henry Richard J" class="hero-image">
+                    <div class="glow-ring"></div>
                 </div>
-                <div class="col-sm-4">
-                  <div class="fact-item">
-                    <h4 class="fs-2 fw-bold">114+</h4>
-                    <p class="text-muted fw-bold">
-                      <i class="fas fa-star"></i> Stars
-                    </p>
-                  </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section fade-in-up">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card glass-effect">
+                        <p>Data Engineer with 4+ years of experience building scalable pipelines, optimizing big data
+                            workflows, and delivering cloud-based analytics solutions. Proficient in Python, PySpark,
+                            SQL, and Databricks with deep expertise in ETL development, data migration, and workflow
+                            orchestration using Apache Airflow.</p>
+                        <p>Hands-on experience with Azure (ADF, DevOps, Function Apps) and Microsoft Fabric. Proven
+                            track record of transforming opaque legacy systems into modern, robust, and auditable data
+                            platforms.</p>
+
+                        <div class="contact-info">
+
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                <span>Chennai, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/henry-richard7" target="_blank" aria-label="LinkedIn"
+                                class="social-btn glass-effect"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/henry-richard7" target="_blank" aria-label="GitHub"
+                                class="social-btn glass-effect"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <a
-                    href="#projects"
-                    class="btn bg-success text-white px-4 py-2 mt-2 mb-5"
-                  >
-                    My Projects
-                    <i class="fas fa-arrow-circle-down"></i>
-                  </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-category glass-effect stagger-item">
+                        <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
+                        <div class="chip-container">
+                            <span class="chip">Python</span>
+                            <span class="chip">PySpark</span>
+                            <span class="chip">SQL</span>
+                            <span class="chip">C#</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-effect stagger-item">
+                        <h3><i class="fas fa-database"></i> Data & ETL Tools</h3>
+                        <div class="chip-container">
+                            <span class="chip">Databricks</span>
+                            <span class="chip">Apache Airflow</span>
+                            <span class="chip">Azure Data Factory (ADF)</span>
+                            <span class="chip">Delta Lake</span>
+                            <span class="chip">Microsoft Fabric</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-effect stagger-item">
+                        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                        <div class="chip-container">
+                            <span class="chip">Microsoft Azure</span>
+                            <span class="chip">Azure DevOps</span>
+                            <span class="chip">Azure Function Apps</span>
+                            <span class="chip">Azure Bot Framework</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-effect stagger-item">
+                        <h3><i class="fas fa-server"></i> Databases</h3>
+                        <div class="chip-container">
+                            <span class="chip">MySQL</span>
+                            <span class="chip">Snowflake</span>
+                            <span class="chip">Delta Lake</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-effect stagger-item">
+                        <h3><i class="fas fa-brain"></i> AI / LLM</h3>
+                        <div class="chip-container">
+                            <span class="chip">LangChain</span>
+                            <span class="chip">LLM Integration</span>
+                            <span class="chip">Databricks Genie API</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-effect stagger-item">
+                        <h3><i class="fas fa-tools"></i> Other Tools</h3>
+                        <div class="chip-container">
+                            <span class="chip">FastAPI</span>
+                            <span class="chip">ReactJS</span>
+                            <span class="chip">Streamlit</span>
+                            <span class="chip">Plotly</span>
+                            <span class="chip">Jinja2</span>
+                            <span class="chip">Playwright</span>
+                            <span class="chip">Domo</span>
+                            <span class="chip">Tableau</span>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-6 mt-2 mt-md-0">
-            <div class="skills-item mb-4">
-              <h3 class="fs-4"><i class="fab fa-python"></i> Python</h3>
-              <div class="progress" style="height: 5px">
-                <div
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 97%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+
+                <div class="timeline">
+                    <!-- Agilisium Consulting Group -->
+                    <div class="timeline-item stagger-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-effect">
+                            <div class="timeline-header primary-org">
+                                <h3>Data Engineer | Agilisium Consulting</h3>
+                                <p class="timeline-date">Mar 2022 – Present</p>
+                            </div>
+
+                            <!-- UCB Role -->
+                            <div class="organization-role">
+                                <h4 class="client-name">Client: Union Chimique Belge (UCB) <span class="role-date">(Feb
+                                        2024 – Present)</span></h4>
+                                <ul class="experience-list">
+                                    <li><strong>SP-PSP Internalization:</strong> Eliminated 3rd-party dependency by
+                                        re-engineering transformation pipelines in PySpark and SQL within Databricks,
+                                        reducing licensing and maintenance risk. Improved pipeline auditability via
+                                        version-controlled notebooks.</li>
+                                    <li><strong>HUB Migration:</strong> Owned end-to-end migration of 16 datasets from a
+                                        legacy system into UCB's Azure ADF and Databricks platform. Optimized data
+                                        refresh to complete 2 hours ahead of SLA. Drove post-UAT change requests under
+                                        tight deadlines.</li>
+                                    <li><strong>AI Data Analytics Chatbot:</strong> Led architecture of a MS Teams bot
+                                        using Databricks Genie API and LangChain. Achieved org-wide self-service
+                                        analytics adoption, reducing time-to-insight from hours to seconds.</li>
+                                    <li><strong>Git-Deploy Optimization:</strong> Delivered a 73% reduction in Git
+                                        deployment time by replacing git clone with Databricks Repos Sync API in Azure
+                                        DevOps.</li>
+                                    <li><strong>Optimize Framework:</strong> Reduced ADF pipeline processing time by 57%
+                                        by introducing Azure Function App for event-driven SFTP triggers.</li>
+                                </ul>
+                            </div>
+
+                            <hr class="role-divider">
+
+                            <!-- NBC Role -->
+                            <div class="organization-role">
+                                <h4 class="client-name">Client: National Broadcasting Company (NBC) <span
+                                        class="role-date">(Jun 2022 – Feb 2024)</span></h4>
+                                <ul class="experience-list">
+                                    <li><strong>Pipeline Optimization:</strong> Proactively migrated a scraping
+                                        bottleneck from Selenium to Playwright, reducing TikTok extraction runtime by
+                                        67%. Restored Meta social analytics continuity via Graph API upgrade.</li>
+                                    <li><strong>Snowflake to Databricks Migration:</strong> Migrated business
+                                        transformation logic, unifying compute and reducing query overhead. Validated
+                                        accuracy through row-level benchmarking.</li>
+                                    <li><strong>Domo to Tableau Migration:</strong> Converted Domo Dataflows to
+                                        Snowflake-native views. Automated Source-to-Target Mapping docs via Python.
+                                        Rebuilt pipelines as Airflow DAGs with zero stakeholder disruption.</li>
+                                    <li><strong>Snaplogic to Databricks Migration:</strong> Authored validation scripts
+                                        for row-by-row comparisons. Resolved production bugs and implemented automated
+                                        failure alerting, reducing mean time to detection.</li>
+                                </ul>
+                            </div>
+
+                            <hr class="role-divider">
+
+                            <!-- Trainee Role -->
+                            <div class="organization-role">
+                                <h4 class="client-name">Data Engineer Trainee <span class="role-date">(Mar 2022 – May
+                                        2022)</span></h4>
+                                <ul class="experience-list">
+                                    <li>Completed intensive onboarding covering Apache Airflow, Snowflake, and
+                                        end-to-end data pipeline development.</li>
+                                    <li>Built sample pipeline integrating Spotify Web API with MySQL, visualizing
+                                        insights using Streamlit and Plotly.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="skills-item mb-4">
-              <h3 class="fs-4"><i class="fab fa-java"></i> Java</h3>
-              <div class="progress" style="height: 5px">
-                <div
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 56%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Personal Projects</h2>
+                <div class="projects-grid">
+
+                    <div class="project-card glass-effect stagger-item">
+                        <h3>Airflow Orchestration Framework</h3>
+                        <p class="tech-stack">Python, MySQL, Jinja2, FastAPI, Apache Airflow, ReactJS</p>
+                        <p>Engineered a self-hosted orchestration platform on Oracle Cloud VM with reusable DAG
+                            templates and a FastAPI backend, eliminating boilerplate. Built a ReactJS frontend for
+                            declarative task config.</p>
+                    </div>
+
+                    <div class="project-card glass-effect stagger-item">
+                        <h3>NextGen Data Ingestion Framework</h3>
+                        <p class="tech-stack">PySpark, Microsoft Fabric, LangChain, LLM</p>
+                        <p>Built a configuration-driven framework supporting 5+ source types with zero code changes per
+                            new source. Designed Medallion architecture on Microsoft Fabric and integrated LLM to
+                            autonomously parse email requests.</p>
+                    </div>
+
+                    <div class="project-card glass-effect stagger-item">
+                        <h3>Stocks Aerial View</h3>
+                        <p class="tech-stack">C#, MySQL</p>
+                        <p>Developed a Windows desktop app for NSE stock analysis with live data scraping, automated
+                            pivot point calculations, and one-click spreadsheet export functionality.</p>
+                    </div>
+
+                </div>
             </div>
-            <div class="skills-item mb-4">
-              <h3 class="fs-4"><i class="fab fa-html5"></i> HTML</h3>
-              <div class="progress" style="height: 5px">
-                <div
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 78%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="education section fade-in-up">
+            <div class="container">
+                <div class="edu-cert-container">
+
+                    <div class="certifications glass-effect stagger-item">
+                        <h2 class="section-title">Certifications</h2>
+                        <ul class="cert-list">
+                            <li><i class="fas fa-certificate accent-icon"></i> Databricks Certified Data Engineer –
+                                Associate</li>
+                            <li><i class="fas fa-certificate accent-icon"></i> PCEP – Certified Entry-Level Python
+                                Programmer</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications glass-effect stagger-item">
+                        <h2 class="section-title">Achievements</h2>
+                        <ul class="cert-list">
+                            <li><i class="fas fa-trophy accent-icon"></i> Global Town Hall 2026 – Outstanding
+                                Contribution Award, Agilisium</li>
+                            <li><i class="fas fa-trophy accent-icon"></i> Synergy Award, Agilisium Consulting (2024)
+                            </li>
+                            <li><i class="fas fa-trophy accent-icon"></i> CEO's Team – Existing Customer Eminence Award
+                                (2023)</li>
+                        </ul>
+                    </div>
+
+                    <div class="education-card glass-effect">
+                        <h2 class="section-title">Education</h2>
+                        <div class="edu-item">
+                            <h3>B.E. Computer Science</h3>
+                            <p class="institution">Sri Lakshmi Ammal Engineering College</p>
+                            <p class="edu-details"><span>2017 - 2021</span> <span class="divider">•</span> <span>CGPA:
+                                    7.75</span></p>
+                        </div>
+
+                        <div class="languages-section">
+                            <h3>Languages</h3>
+                            <div class="lang-chips">
+                                <span class="chip">English (Professional)</span>
+                                <span class="chip">Tamil (Native)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="skills-item mb-4">
-              <h3 class="fs-4"><i class="fab fa-css3-alt"></i> CSS</h3>
-              <div class="progress" style="height: 5px">
-                <div
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 71%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+        </section>
+
+    </main>
+
+    <footer class="glass-effect">
+        <div class="container footer-content">
+            <p>&copy; 2026 Henry Richard J.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/henry-richard7" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/henry-richard7" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
             </div>
-            <div class="skills-item mb-4">
-              <h3 class="fs-4"><i class="fab fa-js"></i> JavaScript</h3>
-              <div class="progress" style="height: 5px">
-                <div
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 80%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skills-item mb-4">
-              <h3 class="fs-4"><i class="fas fa-database"></i> MySql</h3>
-              <div class="progress" style="height: 5px">
-                <div
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 49%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="projects bg-white py-5" id="projects">
-      <div class="container-lg py-4">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="session-title text-center">
-              <h2 class="fw-bold mb-5">
-                <i class="fas fa-code text-success"></i> Projects
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="project-item">
-              <img src="assets/MX-MOVIES.png" class="w-100 img-thumbnail" />
-              <h3 class="fs-5 my-2">MX Player Clone</h3>
-              <p class="mb-4">
-                <a
-                  href="/MX-Player-Web/"
-                  class="text-decoration-none btn btn-success px-4 py-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="project-item">
-              <img src="assets/NIFTY 50.png" class="w-100 img-thumbnail" />
-              <h3 class="fs-5 my-2">Stocks Aerial View</h3>
-              <p class="mb-4">
-                <a
-                  href="https://nse-stocks-view.herokuapp.com/"
-                  class="text-decoration-none btn btn-success px-4 py-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="project-item">
-              <img
-                src="assets/World Radio - Listen to all radio around the world!.png"
-                class="w-100 img-thumbnail"
-              />
-              <h3 class="fs-5 my-2">World Radio</h3>
-              <p class="mb-4">
-                <a
-                  href="/World-Radio/"
-                  class="text-decoration-none btn btn-success px-4 py-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="project-item">
-              <img
-                src="assets/Your Watching - K.G.F  Chapter 1  Hindi .png"
-                class="w-100 img-thumbnail"
-              />
-              <h3 class="fs-5 my-2">Voot Streamer</h3>
-              <p class="mb-4">
-                <a
-                  href="/Voot-Streamer/"
-                  class="text-decoration-none btn btn-success px-4 py-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="project-item">
-              <img src="assets/GTAO.png" class="w-100 img-thumbnail" />
-              <h3 class="fs-5 my-2">GTA Online - IP Grabber</h3>
-              <p class="mb-4">
-                <a
-                  href="https://github.com/henry-richard7/Grand-Theft-Auto-Online-IP-Grabber"
-                  class="text-decoration-none btn btn-success px-4 py-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="project-item">
-              <img
-                src="assets/Spotify-Downloader.png"
-                class="w-100 img-thumbnail"
-              />
-              <h3 class="fs-5 my-2">Spotify Playlist Downloader</h3>
-              <p class="mb-4">
-                <a
-                  href="https://github.com/henry-richard7/spotify-playlist-downloader"
-                  class="text-decoration-none btn btn-success px-4 py-2"
-                  target="_blank"
-                  ><i class="fas fa-eye"></i> View</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
